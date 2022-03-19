@@ -87,11 +87,6 @@ function do_git_commands() {
     cd ${ADDR[4]}
 
     git init
-    echo "<!-- this line was added by the CLONE.sh script to be able to commit and push the changes to the remote repository -->" >> README.md
-    git add README.md
-    git commit -m "Initial commit"
-    git branch -M master
-    git push origin master
 }
 
 function main() {
